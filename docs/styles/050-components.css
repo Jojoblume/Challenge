@@ -1,0 +1,375 @@
+/* ----------------------------------------------------------------------------
+components.css
+Enthält alle Regeln zu Komponenten.
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+
+/* Site Header
+-----------------------------------------------------------------------------*/
+
+.site-header {
+    border-bottom: solid 1px var(--color-borders);
+}
+
+
+/* Navigation
+-----------------------------------------------------------------------------*/
+
+#menu-bar {
+  width: 95%;
+  margin: 20px 0px 0px 0px;
+  padding: 6px 6px 4px 6px;
+  height: 40px;
+  line-height: 100%;
+
+  position:relative;
+  z-index:999;
+}
+#menu-bar li {
+  float: left;
+  position: relative;
+  list-style: none;
+
+}
+#menu-bar a {
+  font-weight: bold;
+  font-family: arial;
+  font-style: normal;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 6px 20px 6px 20px;
+
+  margin: 0;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  text-shadow: 0px 0px 0px #FFFFFF;
+}
+
+
+
+
+
+
+#menu-bar ul {
+  background: #DDDDDD;
+  display: none;
+  width: 185px;
+  position: absolute;
+  top: 30px;
+  border: solid 1px #B4B4B4;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px #222222;
+    margin-top: 20px;
+}
+
+#menu-bar ul li {
+  float: none;
+
+}
+
+#menu-bar ul a {
+  padding:10px 0px 10px 15px;
+
+  font-size:15px;
+  font-style:normal;
+  font-family:arial;
+
+
+}
+#menu-bar ul li:first-child > a {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+#menu-bar ul li:last-child > a {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+#menu-bar:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#menu-bar {
+  display: inline-block;
+}
+  html[xmlns] #menu-bar {
+  display: block;
+}
+* html #menu-bar {
+  height: 1%;
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+
+/*##### Global Classes #####*/
+* {margin: 0;padding: 0;}
+body { font-family: arial; font-size: 16px;}
+
+.clearfix {clear: both;}
+.center {text-align: center;}
+.left {text-align: left;}
+.right {text-align: right;}
+
+.clr1 {background: #FFFFFF; color: #333743;}
+.clr2 {background: #F1F3F5; color: #8F94A3;}
+.clr3 {background: #3E4352; color: #BDC3CF;}
+.clr4 {background: #636A7D; color: #E3E7F2;}
+.clr5 {background: ; color: #F1F3F5;}
+.clr6 {background: ; color: #39B5A1;}
+.clr7 {background: ; color: #D45245;}
+
+a {color: #4682B4; text-decoration: none;}
+a:hover {color: #26455E; text-decoration: underline;}
+a:visited{}
+
+/*##### Footer Structure #####*/
+.bo-wrap {clear:both; width: auto;}
+
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+}
+
+/* ----------------------------------------------------------------------------------------------------*/
+
+.footer {
+    border-top: solid 1px var(--color-borders);
+    padding: 1em;
+
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: px;
+    grid-auto-rows: minmax(100px, auto);
+
+    position: relative;
+    text-align: center;
+    color: blue;
+}
+
+.one {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+
+}
+
+.two {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    background-color:#cccccc;
+}
+
+
+
+.three {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.four {
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 1;
+    background-color:#bbbbbb;
+}
+
+.five {
+    grid-column: 1 / span 3;
+    grid-row: 5 / span 1;
+    background-color:dimgrey;
+
+    padding-left: 190px;
+padding-right: 190px;
+padding-bottom: 20px;
+
+}
+
+.six {
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 1;
+    background-color:darkgrey;
+    text-align: left;
+    padding-left: 11rem;
+
+
+}
+
+.seven {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.eight {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 4;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.one h1  {
+   position: absolute;
+    top: 200px;
+    left: 16px;
+    color:white;
+    font-size: 4em;
+}
+
+.one h2  {
+   position: absolute;
+    top: 20px;
+    right: 16px;
+    color:white;
+    font-size: 3em;
+}
+
+.one h3{
+       position: absolute;
+    top: 420px;
+    left: 200px;
+    color:white;
+    font-size: 1.5em;
+}
+
+
+
+.two h2  {
+   position: absolute;
+    top: 550px;
+    left: 200px;
+    font-size: 5em;
+}
+
+.two h3  {
+   position: absolute;
+    top: 700px;
+    left: 200px;
+    text-align: left;
+
+
+}
+
+
+.four i{
+      position: absolute;
+    top: 1000px;
+    right: 200px;
+    font-size: 2em;
+
+}
+
+.four h3  {
+   position: absolute;
+    top: 1100px;
+    right: 200px;
+    text-align: left;
+
+
+}
+
+.five {
+  text-align: left;
+
+}
+.five p{
+  color: white;
+}
+.five h3{
+  color: white;
+  font-size: 1.5em;
+}
+.five h4{
+  color: white;
+  font-size: 1.2em;
+}
+.five h2{
+}
+.six h3{
+  font-size: 1.2em;
+  color:white;
+
+}
+
+.button {
+  border-radius: 4px;
+  background-color:dodgerblue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.one .button{
+      position: absolute;
+    top: 400px;
+    left: 450px;
+}
+
+.one .button2{
+          position: absolute;
+    top: 0px;
+    left: 300px;
+
+}
+
+.four img{
+    width:200px;
+    float: left;
+    margin-left: 190px;
+}
+.six img{
+  width: 600px;;
+  float: right;
+  margin-right: 0px;
+}
+
+
+.logo{
+    width:100px;
+    margin-top: -25px;
+}
